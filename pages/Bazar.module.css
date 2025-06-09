@@ -1,0 +1,120 @@
+/* src/pages/Bazar.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+.container {
+  display: flex;
+  align-items: flex-start;   /* sidebar colada no topo */
+  justify-content: flex-start; /* tudo à esquerda */
+  gap: 2rem;                  /* espaço entre filtros e catálogo */
+  width: 100%;
+}
+
+
+/* Lateral de filtros */
+.filters {
+  width: 15rem;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  position: sticky;    /* fixa a sidebar */
+  top: 5rem;           /* ajuste conforme a altura do seu Header */
+  align-self: flex-start; 
+}
+
+
+/* Título da seção de filtros */
+.filters h2 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  color: #2C2821;
+}
+
+/* Grupo de filtro (ex.: label + select) */
+.filterGroup {
+  margin-bottom: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #2C2821;
+}
+
+.filterGroup label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.filterGroup select,
+.filterGroup input[type="checkbox"],
+.filterGroup input[type="radio"] {
+  width: 100%;
+  padding: 6px 8px;
+  
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Catálogo em grid */
+.catalog {
+  flex: 1;
+  padding: 16px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 16px;
+
+  /* força todos os itens a ficarem no início da linha */
+  justify-content: start;
+
+  /* opcional: certifica-se de que cada célula posicione o conteúdo à esquerda */
+  justify-items: start;
+  align-items: start; /* garante que todos fiquem “para cima” caso haja espaços verticais */
+}
+
+/* Card de produto retangular (200px de largura e altura automática) */
+.productCard {
+  width: 200px;               /* define largura fixa */
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.productCard:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem será quadrada, ocupando 100% da largura do card */
+.productImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;        /* faz a altura igual à largura (quadrado) */
+  object-fit: cover;
+  background-color: #f5f5f5;
+}
+
+/* Área de informações (nome, preço etc.) abaixo da imagem */
+.productInfo {
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;                    /* permite que o card aumente de altura conforme o conteúdo */
+}
+
+.productName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productPrice {
+  font-size: 0.9rem;
+  color: #666;
+}

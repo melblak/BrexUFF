@@ -1,0 +1,70 @@
+/* src/pages/Home.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.title {
+  font-family: 'Poppins', sans-serif; /* assegura que Poppins é usado */
+  /* caso você ainda use o título aqui */
+  color: #484848;
+  font-size: 3rem;
+}
+
+/* novo estilo para o retângulo central */
+
+.homeContainer {
+  width: 	100%;
+  display: flex;
+  justify-content: center;
+  background-color: #EBEBE5;
+  padding-top: 5rem;
+  padding-bottom: 5rem; /* cor de fundo suave */
+}
+.messageBox {
+  background-color: #B2C1A9;           /* ou rgba(255,255,255,0.8) se quiser leve transparência */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.messageText {
+  font-family: 'Poppins', sans-serif; /* assegura que Poppins é usado */
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.4;
+  padding: 10rem;
+}
+
+.aboutSection {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+}
+
+.aboutTextContainer {
+  font-family: 'Poppins', sans-serif; /* assegura que Poppins é usado */
+  background-color: #C19D77;
+  padding: 3rem; 
+
+}
+
+.aboutText {
+  font-family: 'Poppins', sans-serif; /* assegura que Poppins é usado */
+  background-color: #C19D77; 
+  padding-bottom: 2rem ;
+}
+
+.aboutImage {
+  width: 70%;
+  height: auto;
+}
+
+.aboutButton {
+  font-family: 'Poppins', sans-serif; /* assegura que Poppins é usado */
+  background-color: #2C2821;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5rem;
+} 

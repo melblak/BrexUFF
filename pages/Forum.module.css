@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.forumDescription {
+  font-family: 'Poppins', sans-serif; /* assegura que Poppins é usado */
+  padding-bottom: 2rem ;
+}
+.forumContainer{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+
+}
+
+
+.forumSection {
+  display: flex;
+  align-items: center; /* garante que a imagem e o texto fiquem lado a lado */
+  gap: 0rem;
+  margin-bottom: 2rem;
+}
+
+.titleSection{
+    font-family: 'Poppins', sans-serif; /* assegura que Poppins é usado */
+    font-size: 2rem;
+    color: #2C2821;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+/* 2) Faz o container de texto crescer, empurra a imagem */
+.forumTextContainer {
+  flex: 1;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* garante que o texto fique centralizado */
+}
+
+.forumText1{
+    font-family: 'Poppins', sans-serif;
+    color: #2C2821;
+    background-color:#E0E0E0;
+    padding: 2rem;
+
+}
+
+.forumText2{
+    font-family: 'Poppins', sans-serif;
+    color: #2C2821;
+    background-color:#B2C1A977;
+    padding: 2rem;
+}
+
+/* 3) Define tamanho fixo para a imagem */
+.aboutImage {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
